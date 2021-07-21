@@ -9,6 +9,17 @@
   flex-direction: column;
 }
 
+h6{
+  font-size: initial;
+  font-weight: 600;
+}
+
+@media screen and (min-width:600px){
+  .hero{
+    background-image: url("../src/assets/Fondo.jpeg");
+  }
+}
+
 .form-input{
   display: flex;
   flex-direction: column;
@@ -19,6 +30,7 @@
   font-size: large;
   text-transform: uppercase;
   letter-spacing: 2px;
+  font-weight: 400;
 }
 
 input{
@@ -66,6 +78,7 @@ input[type=number] {
   color:slategrey;
   font-size: smaller;
   padding-top: 5px;
+  font-weight: 400;
 }
 
 .wrap{

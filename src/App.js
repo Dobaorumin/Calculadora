@@ -37,14 +37,14 @@ function App() {
       <div className="result">
       {data ? (
         <div className="result">
-          <p className="Dinero">Gastos fijos: {formatCurrency(data.gastosBasicos)}
+          <h6 className="Dinero">Gastos fijos: {formatCurrency(data.gastosBasicos)}
           <p className="warning">(Alquiler,Coche,Comida...)</p>
-          </p>
-          <p className="Dinero">Gastos personales: {formatCurrency(data.gastosPersonales)}
+          </h6>
+          <h6 className="Dinero">Gastos personales: {formatCurrency(data.gastosPersonales)}
           <p className="warning">(Salir,Caprichos...)</p>
-          </p>
-          <p className="Dinero">Dinero que debes ahorrar: {formatCurrency(data.ahorro)}</p>
-          <p className="Dinero">En un año, habrías ahorrado: {formatCurrency(data.ahorradoAño)}</p>
+          </h6>
+          <h6 className="Dinero">Dinero que debes ahorrar: {formatCurrency(data.ahorro)}</h6>
+          <h6 className="Dinero">En un año, habrías ahorrado: {formatCurrency(data.ahorradoAño)}</h6>
 
         </div>
       ) : null}
