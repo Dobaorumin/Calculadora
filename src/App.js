@@ -19,7 +19,7 @@ function App() {
   };
 
   const formatCurrency = (numero) => {
-    const formatedNumber = numero.toLocaleString("es-ES", {style:"currency",currency:"EUR"});
+    const formatedNumber = numero?.toLocaleString("es-ES", {style:"currency",currency:"EUR"});
     return formatedNumber
   }
 
@@ -37,14 +37,14 @@ function App() {
       <div className="result">
       {data ? (
         <div className="result">
-          <h6 className="Dinero">Gastos fijos: {formatCurrency(data.gastosBasicos)}
+          <h6 className="Dinero">Gastos fijos: {formatCurrency(data.gastosBasicos || data.gastosBasicosMenores)}
           <p className="warning">(Alquiler,Coche,Comida...)</p>
           </h6>
-          <h6 className="Dinero">Gastos personales: {formatCurrency(data.gastosPersonales)}
+          <h6 className="Dinero">Gastos personales: {formatCurrency(data.gastosPersonales || data.gastosPersonalesMenores)}
           <p className="warning">(Salir,Caprichos...)</p>
           </h6>
-          <h6 className="Dinero">Dinero que debes ahorrar: {formatCurrency(data.ahorro)}</h6>
-          <h6 className="Dinero">En un año, habrías ahorrado: {formatCurrency(data.ahorradoAño)}</h6>
+          <h6 className="Dinero">Dinero que debes ahorrar: {formatCurrency(data.ahorro || data.ahorroMenores)}</h6>
+          <h6 className="Dinero">En un año, habrías ahorrado: {formatCurrency(data.ahorradoAño || data.ahorradoAñoMenores)}</h6>
 
         </div>
       ) : null}
