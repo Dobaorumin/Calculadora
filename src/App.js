@@ -27,6 +27,7 @@ function App() {
   return (
     <>
     <div className="hero">
+      <div className="container">
       <form className="form-input" onSubmit={handleSubmit}>
         <label className="label">Introduce tu sueldo.</label>
       <p className="warning">Ejemplo: 1200</p>
@@ -48,6 +49,7 @@ function App() {
 
         </div>
       ) : null}
+      </div>
       </div>
     </div>
     </>

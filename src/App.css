@@ -31,6 +31,7 @@ h6{
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 400;
+  width: max-content;
 }
 
 input{
@@ -85,8 +86,24 @@ input[type=number] {
   border:1px solid black;
 }
 
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60%;
+  width: 400px;
+  background: rgb(241 237 237 / 46%);
+  border-radius: 20px;
+  box-shadow: 3px 2px 20px -10px #000000;
+  flex-direction: column;
+}
+
 @media screen and (max-width:500px){
   .form-input{
     width: 75%;
+  }
+  .container{
+    width: 90%;
   }
 }
